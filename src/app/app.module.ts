@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,11 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { PakagesComponent } from './pakages/pakages.component';
+import { EventbookComponent } from './eventbook/eventbook.component';
+import { PaymentComponent } from './payment/payment.component';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,11 +26,18 @@ import { ContactusComponent } from './contactus/contactus.component';
     HomeComponent,
     PagenotfoundComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    ForgetpasswordComponent,
+    PakagesComponent,
+    EventbookComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    // FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

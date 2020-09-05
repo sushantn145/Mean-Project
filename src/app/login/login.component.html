@@ -1,4 +1,103 @@
-<p>login works</p>
+<div class=" container-fluid">
+
+    <div class="row align-items-center" style="height: 60vh; background: radial-gradient(rgb(248, 246, 148),gold);">
+        <div class="col-2 d-flex justify-content-end ">
+            <img src="assets/logo.png" alt="" class="" style="height: 70%;width: 70%;">
+        </div>
+
+        <div class="col-10 justify-content-center align-items-center ">
+
+            <div class="text-danger justify-content-center align-items-center"
+                style="font-weight: bolder;font-size:50px;"> welcome to Event Management !</div>
+            <div class=" justify-content-center align-items-center">
+                <h4>We are happy taht you are here Wel-come !!!!!!</h4>
+            </div>
+        </div>
 
 
-<input type="button" value="logged in" (click)="loogsin()" />
+    </div>
+
+    <div class=" container">
+        <div style="  background: url(assets/img1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+
+            <div class=" row vh-100 justify-content-center   text-light" id="main-bg">
+                <div class="col-12 col-md-4 d-flex  justify-content-center align-items-center" id="id1">
+                    <div class="row text-dark h-60 mt-20 w-100 " style="box-shadow: 2px 2px 2px 2px beige;"
+                        id="main-box">
+
+                        <div class="col-12 " [formGroup]="fbFormGroup">
+                            <div class="row ">
+                                <div class="col-12 d-flex justify-content-center align-items-center " style="height:4.375rem;font-weight: bold;color: white;
+                                text-shadow: 3px 2px skyblue;font-size:2em">
+                                    Login Here
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-12 d-flex justify-content-center align-items-center "
+                                    style="height:70px">
+                                    <input type="text" placeholder="Username" class="form-control rounded-pill"
+                                        formControlName="emailid" required>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-12 d-flex justify-content-center align-items-center "
+                                    style="height:4.375rem;">
+                                    <input type="password" placeholder="Password"
+                                        class="form-control rounded-pill input-group-addon" formControlName="password"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-12 d-flex mb-2 justify-content-center align-items-center "
+                                    style="height:4.375rem;">
+                                    <button class="btn btn-primary" id="btn1" (click)="loogsin()">Login</button>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-12 d-flex justify-content-center align-items-center 
+                            " style="height:4.375rem;text-align: center;">
+                                    <div class="row">
+                                        <div class="col-12 text-dark mb-2 mt-2">
+                                            <button class="btn btn-outline-danger" (click)="forgetpassword()">Forget
+                                                Password</button>
+                                        </div>
+                                        <div class="col-12 text-primary " style="font-weight:bold;">
+                                            Not Register Yet ?<br> <button class="btn btn-outline-danger"
+                                                (click)="register()">Register Here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row  text-danger ">
+                                <div class="col-12 d-flex justify-content-center align-items-center"
+                                    style="height:4.375rem;">
+                                    <i style="color:#4867AA" class="fa fa-facebook-official"></i>
+                                    <i class="fa fa-google-plus-square"></i>
+                                    <i class="fa fa-twitter-square"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="row bg-dark text-light d-flex justify-content-center align-items-center vw-100" style="height:15vh;">
+
+        Copyright @Eventmanagement are reserved!!
+    </div>
+
+
+</div>

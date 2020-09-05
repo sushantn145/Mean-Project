@@ -1,0 +1,93 @@
+<div class="container-fluid">
+
+    <div class="row justify-content-center font-weight-bolder" [formGroup]="eventdata">
+        <div class="col-9 d-flex flex-column ">
+            <div class="row my-3 text-danger justify-content-center align-items-center"
+                style="font-size: 50px; font-weight:bolder;">
+                Enter Booking Details
+            </div>
+            <div class="row my-3 ">
+                <div class="col-6">
+                    <h4>
+                        Enter event name :
+                    </h4>
+                </div>
+                <div class="col-6 ">
+                    <input type="text" class="form-control" placeholder="Enter event name" formControlName="eventname"
+                        required>
+                </div>
+
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
+                    <h4>
+                        Enter starting of event date :
+                    </h4>
+                </div>
+                <div class="col-6 ">
+                    <input type="text" class="form-control" placeholder="yy-mm-dd" formControlName="eventstartdate"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="row my-3">
+                <div class="col-6">
+                    <h4>
+                        Enter ending of event date :
+                    </h4>
+                </div>
+                <div class="col-6 ">
+                    <input type="text" class="form-control" placeholder="yy-mm-dd" formControlName="eventenddate"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="row my-3">
+                <div class="col-6">
+                    <h4>
+                        Enter event requirements :
+                    </h4>
+                </div>
+                <div class="col-6 ">
+                    <input type="text" class="form-control" placeholder="e.g DJ,rooms,driks etc"
+                        formControlName="eventreq">
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-6">
+                    <h4>
+                        Enter Number of guest :
+                    </h4>
+                </div>
+                <div class="col-6 ">
+                    <input type="text" class="form-control" placeholder="e.g 100,200,300 etc" formControlName="guest"
+                        required>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-6">
+                    <h4>Enter location of event :</h4>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="e.g Mumbai/Delhi/Chennai etc"
+                        formControlName="location" required>
+                </div>
+            </div>
+
+            <div class="row  align-items-center justify-content-center my-5">
+
+                <button class="btn btn-outline-success d-flex justify-content-center align-items-center"
+                    [disabled]="!eventdata.valid" (click)="makepayment()">Make
+                    payment !</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

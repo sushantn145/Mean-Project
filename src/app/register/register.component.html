@@ -1,1 +1,77 @@
-<p>register works!</p>
+<div class="container-fluid">
+    <div
+        style="background: url(assets/img3.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+
+        <div class=" row vh-100 justify-content-center text-light" id="main-bg">
+            <div class="col-12 col-md-5 d-flex  justify-content-center align-items-center" id="id1">
+                <div class="row h-60 mt-20 w-100 justify-content-center" style="box-shadow: 2px -3px 5px 1px beige;"
+                    id="main-box">
+                    <!--Left-side-Login-Box-->
+                    <div class="col-12 col-md-10   justify-content-between h-100 w-100" id="registration-box"
+                        [formGroup]="registerdata">
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center " style="height:4.375rem;font-weight: bold;color: white;
+                            text-shadow: -5px -1px #2E1905;font-size:2em">
+                                User <a style="text-shadow: 5px 1px #2E1905;">Registration</a>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center " style="height:70px">
+                                <input type="text" placeholder="First Name" class="form-control mr-2 rounded-pill"
+                                    formControlName="firstname" required>
+                                <input type="text" placeholder="Last Name" class="form-control rounded-pill"
+                                    formControlName="lastname" required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center "
+                                style="height:4.375rem;">
+                                <input type="text" placeholder="Email Id" class="form-control rounded-pill"
+                                    formControlName="emailid" required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center "
+                                style="height:4.375rem;">
+                                <input type="password" placeholder="Password" class="form-control rounded-pill "
+                                    formControlName="password" required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center "
+                                style="height:4.375rem;">
+                                <input type="password" placeholder="Confirm Password" class="form-control rounded-pill "
+                                    formControlName="confirmpassword" required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center "
+                                style="height:4.375rem;">
+                                <input type="text" placeholder="Mobile No" class="form-control rounded-pill "
+                                    formControlName="mobno" required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center align-items-center 
+                        " style="height:4.375rem;text-align: center;">
+                                <div class="row">
+                                    <button class="btn btn-dark" id="btn1" [disabled]="!registerdata.valid" (click)="
+                                        submithere()">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row  text-light ">
+                            <div class="col-12 d-flex justify-content-center align-items-center"
+                                style="height:4.375rem;">
+                                <i style="color:#4867AA" class="fa fa-facebook-official"></i>
+                                <i class="fa fa-google-plus-square"></i>
+                                <i class="fa fa-twitter-square"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
